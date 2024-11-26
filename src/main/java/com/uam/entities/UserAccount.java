@@ -21,7 +21,7 @@ public class UserAccount {
     private String email;
     private Long phno;
     private String gender;
-    private Date dob;
+    private LocalDate dob;
     private Long ssn;
     private String activeSw="Y";
     @CreationTimestamp
@@ -59,10 +59,10 @@ public class UserAccount {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public Date getDob() {
+	public LocalDate getDob() {
 		return dob;
 	}
-	public void setDob(Date dob) {
+	public void setDob(LocalDate dob) {
 		this.dob = dob;
 	}
 	public Long getSsn() {
